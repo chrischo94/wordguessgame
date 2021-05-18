@@ -10,9 +10,11 @@ var loseCounter = 0;
 var isWin = false;
 var timer;
 var timerCount;
+
 // Arrays used to create blanks and letters on screen
 var lettersInChosenWord = [];
 var blanksLetters = [];
+
 // Array of words the user will guess
 var words = [
   "variable",
@@ -23,16 +25,26 @@ var words = [
   "string",
   "boolean",
 ];
+
 // The init function is called when the page loads
 function init() {}
+// reset timer
+// set score to 0
+// random word from var words string
+// random lettersInChosenWord & blanksLetters
+
 // The startGame function is called when the start button is clicked
 function startGame() {
   // Prevents start button from being clicked when round is in progress
 }
+
 // The winGame function is called when the win condition is met
 function winGame() {}
+
+
 // The loseGame function is called when timer reaches 0
 function loseGame() {}
+
 // The setTimer function starts and stops the timer and triggers winGame() and loseGame()
 function startTimer() {
   // Sets timer
@@ -41,17 +53,20 @@ function startTimer() {
   // Tests if time has run out
   // Clears interval
 }
+
 // Creates blanks on screen
 function renderBlanks() {
   // Randomly picks word from words array
   // Uses loop to push blanks to blankLetters array
   // Converts blankLetters array into a string and renders it on the screen
 }
+
 // Updates win count on screen and sets win count to client storage
 function setWins() {}
 // Updates lose count on screen and sets lose count to client storage
 function setLosses() {}
 // These functions are used by init
+
 //Use localStorage to get the number of wins and get them on the screen
 function getWins() {
   // Get stored value from client storage, if it exists
@@ -59,6 +74,7 @@ function getWins() {
   // If a value is retrieved from client storage set the winCounter to that value
   //Render win count to page
 }
+
 //Use localStorage to get the number of losses and get them on the screen
 function getlosses() {}
 function checkWin() {
@@ -66,18 +82,21 @@ function checkWin() {
 }
 // Tests if guessed letter is in word and renders it to the screen.
 function checkLetters(letter) {}
+
 // Attach event listener to document to listen for key event
 document.addEventListener("keydown", function (event) {
   // If the count is zero, exit function
   // Convert all keys to lower case
   // Test if key pushed is letter
 });
+
 // Attach event listener to start button to call startGame function on click
 startButton.addEventListener("click", startGame);
 // Calls init() so that it fires when page opened
 init();
 // Bonus: Add reset button
 var resetButton = document.querySelector(".reset-button");
+
 function resetGame() {
   // Resets win and loss counts
   // Renders win and loss counts and sets them into client storage
